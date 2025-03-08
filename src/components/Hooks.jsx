@@ -17,11 +17,6 @@ export const useQuizData = () => {
           setData(initialData);
           setIsLoading(false);
         }, 500);
-
-        // If you want to fetch from an actual API instead:
-        // const response = await fetch('your-api-endpoint');
-        // const result = await response.json();
-        // setData(result);
       } catch (err) {
         setError(err);
         setIsLoading(false);
